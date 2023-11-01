@@ -1,2 +1,2 @@
 # Pokedex
- Uma Pokédex baseada no nosso amado e querido pokémon
+## Ainda com a responsividade apenas para os computadores
