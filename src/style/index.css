@@ -1,87 +1,66 @@
 @charset "UTF-8"; 
-*{
+* {
     margin: 0;
     padding: 0; 
     font-family: 'Mukta', sans-serif;
 }
-body{
-    background-image: linear-gradient(90deg,#85DC82,#D0DB81,#81DBBC);
+
+body {
+    background-image: linear-gradient(90deg, #85DC82, #D0DB81, #81DBBC);
 }
 
 img{
+    max-width:100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-}
-.camp{
-    width: 300px;
-    position: relative;
     top:50%;
-    left: 50%;
-    transform: translate(-43%,430px);
+    left:50%;
+    transform: translate(-50%,-50%);
 }
-#pokemon,#pesquisa,#relogar{
-    border: 1.5px solid black;
-    box-shadow: 2px 2px 1px grey;
-    padding:4px;
-    font-size: 12px;
 
-}
-#pesquisa:hover{
-    background-color: rgb(247, 174, 174);
-    transition: 0.5s;
+#pokemon,#pesquisa,#relogar{
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px rgb(0, 0, 0);
+    background-color: rgb(243, 229, 229);
+    height: 30px;
+
+    position: relative;
+    top: 435px;
+    left: 530px;
 }
 #pokemon:focus{
     outline: 0;
 }
-
-#relogar{
-    border: 1.5px solid black;
-    box-shadow: 2px 2px 1px grey;
-    padding: 4px;
+#pokemon{
+    width: 200px;
 }
-#relogar:hover{
-    background-color: rgb(247, 174, 174);
-    transition: 0.5s;
-}
-
 #res{
-    text-align: center;
     width: 130px;
-    color: rgb(97, 94, 94);
     font-size: 20px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-60%,314px);
+    transform: translate(-50%,95%);
 }
-#err{
-    color: white;
-    padding: 5px;
-    position: absolute;
-    top: 500px;
-    left: 630px;
-}
-#pokemons{
-    z-index: 1;
-    width: 80px;
-    position: absolute;
-    top:280px;
-    left: 710px;
+#type1,#type2{
+    width: 70px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    top:150px;
+    left:550px;
+    display: none;
 }
 
-#type1,#type2{
-    border: 1px solid black;
-    background-color:#D0DB81;
-    width: 55px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+#pokemons{
+    width: 80px;
     position: relative;
-    top: 50%;
-    left: 52%;
-    transform: translate(-230%,150px);
-    display:none;
+    top: 190px;
+}
+#pesquisa:hover{
+    background-color: rgb(238, 109, 109);
+    transition: 0.5ms;
+}
+#relogar:hover{
+    background-color: rgb(238, 109, 109);
+    transition: 0.5ms;
 }
